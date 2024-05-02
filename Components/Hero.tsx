@@ -3,7 +3,11 @@ import React from "react";
 import Particle from "./Particle";
 import TextEffect from "./TextEffect";
 import Image from "next/image";
-import { AcademicCapIcon, ArrowDownCircleIcon } from "@heroicons/react/20/solid";
+import {
+  AcademicCapIcon,
+  ArrowDownCircleIcon,
+} from "@heroicons/react/20/solid";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -22,17 +26,26 @@ const Hero = () => {
             excepturi neque natus quod ea mollitia expedita ex repellendus?
             Excepturi tempora illum et!
           </p>
-          <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
-            <button className="px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
-              <p>Download CV</p>
-              <ArrowDownCircleIcon className="w-[1.6rem] h-[1.7rem] text-black" />
-            </button>
+          {/* Botões */}
+          <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row sm:space-x-2">
+            <div>
+              <a
+                href="/Currículo.pdf"
+                download
+                className="hover:bg-yellow-400 transition-all duration-200 inline-flex items-center px-[2rem] py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black rounded-full cursor-pointer gap-2"
+              >
+                Download CV
+                <ArrowDownCircleIcon className="w-[1.6rem] h-[1.7rem] text-black" />
+              </a>
+            </div>
 
-            <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
-              <button className="px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
-                <p>Github</p>
-                <AcademicCapIcon className="w-[1.6rem] h-[1.7rem] text-black"/>
-              </button>
+            <div className="flex items-center space-x-2">
+              <a href="https://github.com/Helton1000" target="_blank">
+                <FaGithubSquare className="w-[4rem] h-[4rem] hover:text-yellow-400 transition-all duration-200 text-[#55e6a5]" />
+              </a>
+              <a href="https://www.linkedin.com/in/hfbarbosa/" target="_blank">
+                <FaLinkedin className="w-[4rem] h-[4rem] hover:text-yellow-400 transition-all duration-200 text-[#55e6a5]" />
+              </a>
             </div>
           </div>
         </div>
