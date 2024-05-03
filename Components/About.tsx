@@ -45,7 +45,7 @@ const about = () => {
         </div>
         <div className="lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[300px] h-[300px] relative hidden md:block">
           <Image
-            src="/images/header-img.svg"
+            src="/images/header.svg"
             alt="user"
             layout="fill"
             objectFit="contain"
