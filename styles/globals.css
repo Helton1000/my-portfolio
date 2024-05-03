@@ -16,4 +16,10 @@
   .heading {
     @apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase;
   }
+  .heading_primary {
+    @apply mt-[0.6rem] p-2 sm:p-0 leading-[3.5rem] text-white text-[27px] md:text-[30px] lg:text-[38px]
+  }
+  .heading_mini{
+    @apply text-[17px] text-white opacity-75
+  }
 }
