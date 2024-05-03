@@ -11,7 +11,7 @@ import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="h-[88vh] bg-[url('/images/banner.jpg')] bg-cover bg-center">
+    <div className="h-[88vh] bg-[url('/images/banner.jpg')] mt-[10vh] bg-cover bg-center">
       <Particle />
       <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
         <div>
@@ -50,12 +50,12 @@ const Hero = () => {
           </div>
         </div>
         {/* Foto */}
-        <div className="w-[500px] hidden bg-[#55e6a5] relative lg:flex items-center rounded-full h-[500px]">
+        <div className="w-[500px] hidden relative lg:flex items-center rounded-full h-[500px] ml-20">
           <Image
-            src="/images/u1.jpg"
+            src="/images/ic1.jpg"
             alt="user"
             layout="fill"
-            className="object-cover rounded-full"
+            className="object-cover rounded-full border border-purple-500"
           />
         </div>
       </div>

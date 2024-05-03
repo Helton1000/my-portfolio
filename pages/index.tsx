@@ -1,6 +1,7 @@
 import Hero from "@/Components/Hero";
 import MobileNav from "@/Components/MobileNav";
 import Nav from "@/Components/Nav";
+import About from "@/Components/About";
 import React, { useState } from "react";
 
 const PaginaInicial = () => {
@@ -14,8 +15,12 @@ const PaginaInicial = () => {
         {/* Navbar */}
         <MobileNav nav={nav} closeNav={closeNav} />
         <Nav openNav={openNav} />
-        {/* animação */}
+        {/* intro */}
         <Hero />
+      </div>
+      {/* Sobre */}
+      <div className="relative z-[30]">
+        <About />
       </div>
     </div>
   );
