@@ -4,7 +4,7 @@ import ExperienceItem from "./ExperienceItem";
 const Experience = () => {
   return (
     <div
-      id="projetos"
+      id="cursos"
       className="pt-[4rem] md:pt-[8rem] pb-[5rem] bg-[#121212]"
     >
       <h1 className="heading_primary heading">
