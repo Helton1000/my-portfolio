@@ -43,7 +43,11 @@ const about = () => {
             <ArrowDownCircleIcon className="w-[1.6rem] h-[1.7rem] text-black" />
           </a>
         </div>
-        <div className="lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[300px] h-[300px] relative hidden md:block">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="200"
+          className="lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[300px] h-[300px] relative hidden md:block"
+        >
           <Image
             src="/images/header.svg"
             alt="user"
