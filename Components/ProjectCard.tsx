@@ -24,7 +24,9 @@ const ProjectCard = ({ image, title, tech, tech2, tech3, tech4 }: Props) => {
       </div>
 
       <div>
-        <h1 className="text-[25px] mt-[0.2rem] text-white font-[600]">{title}</h1>
+        <h1 className="text-[25px] mt-[0.2rem] text-white font-[600]">
+          {title}
+        </h1>
         <p className="text-[15px] text-white opacity-65 mt-[1rem]">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque a
           ipsam quidem quis hic beatae explicabo, laborum esse nulla ratione
@@ -36,16 +38,22 @@ const ProjectCard = ({ image, title, tech, tech2, tech3, tech4 }: Props) => {
           voluptates nihil?
         </p>
         <div className="mt-[1.3rem] grid-cols-2 grid sm:grid-cols-3 xl:grid-cols-4 gap-[2rem]">
-          <h1 className="px-6 py-3 bg-blue-700 text-white rounded-lg text-center">{tech}</h1>
+          <h1 className="px-6 py-3 bg-blue-700 text-white rounded-lg text-center">
+            {tech}
+          </h1>
 
-          <h1 className="px-6 py-3 bg-white text-black rounded-lg text-center">{tech2}</h1>
+          <h1 className="px-6 py-3 bg-white text-black rounded-lg text-center">
+            {tech2}
+          </h1>
 
-          <h1 className="px-6 py-3 bg-sky-500 text-black rounded-lg text-center">{tech3}</h1>
+          <h1 className="px-6 py-3 bg-sky-500 text-black rounded-lg text-center">
+            {tech3}
+          </h1>
 
-          <h1 className="px-6 py-3 bg-blue-500 text-white rounded-lg text-center">{tech4}</h1>
-          
+          <h1 className="px-6 py-3 bg-blue-500 text-white rounded-lg text-center">
+            {tech4}
+          </h1>
         </div>
-        
       </div>
     </div>
   );

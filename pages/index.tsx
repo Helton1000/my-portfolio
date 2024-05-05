@@ -5,6 +5,8 @@ import About from "@/Components/About";
 import React, { useState } from "react";
 import Skills from "@/Components/Skills";
 import Projects from "@/Components/Projects";
+import Projetos from "@/Components/Experience";
+import Experience from "@/Components/Experience";
 
 const PaginaInicial = () => {
   const [nav, setNav] = useState(false);
@@ -27,6 +29,7 @@ const PaginaInicial = () => {
         {/* Skills */}
         <Skills/>
         <Projects/>
+        <Experience/> 
       </div>
     </div>
   );

@@ -19,6 +19,30 @@ const Projects = () => {
         tech4="Typescript"
         image="/images/p1.png"
       />
+      <ProjectCard
+        title="Projeto 2"
+        tech="React"
+        tech2="Next Js"
+        tech3="Tailwind"
+        tech4="Typescript"
+        image="/images/p1.png"
+      />
+      <ProjectCard
+        title="Projeto 3"
+        tech="React"
+        tech2="Next Js"
+        tech3="Tailwind"
+        tech4="Typescript"
+        image="/images/p1.png"
+      />
+      <ProjectCard
+        title="Projeto 4"
+        tech="React"
+        tech2="Next Js"
+        tech3="Tailwind"
+        tech4="Typescript"
+        image="/images/p1.png"
+      />
     </div>
   );
 };
