@@ -1,4 +1,5 @@
 import { ArrowDownCircleIcon } from "@heroicons/react/20/solid";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
@@ -6,7 +7,11 @@ const about = () => {
   return (
     <div id="sobre" className="bg-[#121121] pb-[3rem] pt-[4rem] md:pt-[8rem]">
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
-        <div>
+        <motion.div
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ duration: 1 }}
+        >
           <h1 className="text-[20px] font-bold uppercase text-[#55e6a5] mb-[1rem]">
             conheça mais
           </h1>
@@ -42,10 +47,11 @@ const about = () => {
             Download CV
             <ArrowDownCircleIcon className="w-[1.6rem] h-[1.7rem] text-black" />
           </a>
-        </div>
-        <div
-          data-aos="fade-left"
-          data-aos-delay="200"
+        </motion.div>
+        <motion.div
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 100 }}
+          transition={{ duration: 1 }}
           className="lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[300px] h-[300px] relative hidden md:block"
         >
           <Image
@@ -55,7 +61,7 @@ const about = () => {
             objectFit="contain"
             className="relative z-[11] w-[100%] h-[100%] object-contain animate-wiggle ml-20"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

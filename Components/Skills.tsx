@@ -1,14 +1,17 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import { FaGithubSquare } from "react-icons/fa";
 import SkillCard from "./SkillCard";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
     <div id="skills">
       <div className="bg-[#121212] pt-[7.4rem]  pb-[5rem]">
         <div className="grid w-[80%] mx-auto grid-cols-1 lg:grid-cols-7 gap-[3rem] items-center">
-          <div className="col-span-3">
+          <motion.div 
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ duration: 1 }}
+          className="col-span-3">
             <h1 className="text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase">
               My <span className="text-yellow-400">Skills</span>
             </h1>
@@ -26,7 +29,7 @@ const Skills = () => {
               optio similique incidunt deleniti illo quisquam obcaecati eligendi
               suscipit et tempora dolorum?
             </p>
-          </div>
+          </motion.div>
           <div className="col-span-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 gap-[1rem] items-center">
               <div data-aos="flip-left" data-aos-anchor-placement="top-center">

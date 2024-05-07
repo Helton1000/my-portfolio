@@ -10,6 +10,7 @@ import Contact from "@/Components/Contact";
 import Footer from "@/Components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Teste from "@/Components/Teste";
 
 const PaginaInicial = () => {
   const [nav, setNav] = useState(false);
@@ -58,7 +59,9 @@ const PaginaInicial = () => {
         {/* Skills */}
         <Skills />
         <Projects />
-        <Experience />
+        {/* <Experience /> */}
+        <Teste />
+
         <Contact />
         <Footer />
       </div>

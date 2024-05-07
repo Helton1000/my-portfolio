@@ -11,14 +11,14 @@ const Nav = ({ openNav }: Props) => {
       <div className="flex items-center justify-between w-[80%] mx-auto h-[100%]">
         <a className="flex-[0.6]" href="#home">
           <h1 className="text-[25px] text-white font-bold">
-            WEB
-            <span className="text-yellow-300">DEV</span>
+            PORT
+            <span className="text-yellow-300">FOLIO</span>
           </h1>
         </a>
         <a href="#sobre" className="nav-link">SOBRE</a>
         <a href="#skills" className="nav-link">SKILLS</a>
         <a href="#projetos" className="nav-link">PROJETOS</a>
-        <a href="#cursos" className="nav-link">CURSOS</a>
+        <a href="#cursos" className="nav-link">EXPERIENCIA</a>
         <a href="#contato" className="nav-link">CONTATO</a>
         {/* Menu hamburguer */}
         <div onClick={openNav}>

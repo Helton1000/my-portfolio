@@ -1,10 +1,15 @@
 import { EnvelopeIcon, MapIcon, PhoneIcon } from "@heroicons/react/20/solid";
+import { motion } from "framer-motion";
 import React from "react";
 
 const Footer = () => {
   return (
     <div className="pt-[5rem] pb-[3rem] bg-black">
-      <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem] border-b-[1.4px] pb-5 border-gray-600 border-opacity-40">
+      <motion.div 
+      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, x: -100 }}
+      transition={{ duration: 0.5 }}
+      className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem] border-b-[1.4px] pb-5 border-gray-600 border-opacity-40">
         <div className="text-white text-[18px]">
           <h1 className="text-[30px] text-white font-bold">
             Helton
@@ -50,10 +55,16 @@ const Footer = () => {
           >
             cursos
           </a>
+          <a
+            href="#home"
+            className="block text-white text-opacity-80 mb-4 cursor-pointer hover:text-yellow-300 uppercase underline"
+          >
+            home
+          </a>
         </div>
         <div className="lg:mx-auto">
           <h1 className="text-white font-semibold mb-[1.4rem] text-[17px]">
-            Endereço
+            Informações
           </h1>
           <div className="flex items-center mt-[1rem] space-x-2">
             <MapIcon className="w-[1rem] h-[1rem] text-yellow-300" />
@@ -74,7 +85,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className="mt-[1.4rem] w-[80%] mx-auto text-white opacity-70">
         &#169; Copyright Helton Ribeiro Barbosa Filho 2024
       </div>
