@@ -15,20 +15,56 @@ const MobileNav = ({ nav, closeNav }: Props) => {
 
   return (
     <div
-      className={`fixed ${navAnimation} transform transition-all duration-300 top-0 left-0 right-0 bottom-0 z-[1000000] bg-[#09101a]`}
+      className={`fixed ${navAnimation} bottom-0 left-0 right-0 top-0 z-[1000000] transform bg-[#09101a] transition-all duration-300`}
     >
-      <div className="w-[100vw] h-[100vh] flex flex-col items-center justify-center">
-        <a href="#home" className="nav-link-mobile" onClick={handleNavLinkClick}>HOME</a>
-        <a href="#sobre" className="nav-link-mobile" onClick={handleNavLinkClick}>SOBRE</a>
-        <a href="#skills" className="nav-link-mobile" onClick={handleNavLinkClick}>SKILLS</a>
-        <a href="#projetos" className="nav-link-mobile" onClick={handleNavLinkClick}>PROJETOS</a>
-        <a href="#cursos" className="nav-link-mobile" onClick={handleNavLinkClick}>CURSOS</a>
-        <a href="#contato" className="nav-link-mobile" onClick={handleNavLinkClick}>CONTACT</a>
+      <div className="flex h-[100vh] w-[100vw] flex-col items-center justify-center">
+        <a
+          href="#home"
+          className="nav-link-mobile"
+          onClick={handleNavLinkClick}
+        >
+          HOME
+        </a>
+        <a
+          href="#sobre"
+          className="nav-link-mobile"
+          onClick={handleNavLinkClick}
+        >
+          SOBRE
+        </a>
+        <a
+          href="#skills"
+          className="nav-link-mobile"
+          onClick={handleNavLinkClick}
+        >
+          SKILLS
+        </a>
+        <a
+          href="#projetos"
+          className="nav-link-mobile"
+          onClick={handleNavLinkClick}
+        >
+          PROJETOS
+        </a>
+        <a
+          href="#cursos"
+          className="nav-link-mobile"
+          onClick={handleNavLinkClick}
+        >
+          CURSOS
+        </a>
+        <a
+          href="#contato"
+          className="nav-link-mobile"
+          onClick={handleNavLinkClick}
+        >
+          CONTACT
+        </a>
       </div>
       {/* Botao de fechar nav */}
       <div
         onClick={closeNav}
-        className="absolute z-[100000000] cursor-pointer top-[2rem] right-[2rem] w-[2rem] h-[2rem] text-yellow-400"
+        className="absolute right-[2rem] top-[2rem] z-[100000000] h-[2rem] w-[2rem] cursor-pointer text-yellow-400"
       >
         <XMarkIcon />
       </div>

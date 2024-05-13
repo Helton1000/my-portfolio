@@ -36,7 +36,7 @@ const Teste = () => {
   return (
     <div
       id="cursos"
-      className="pt-[2rem] md:pt-[4rem] bg-[#121212] border-b border-neutral-900 pb-8 text-white"
+      className="border-b border-neutral-900 bg-[#121212] pb-8 pt-[2rem] text-white md:pt-[4rem]"
     >
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
@@ -46,10 +46,10 @@ const Teste = () => {
       >
         My <span className="text-yellow-400">Experience</span>
       </motion.h1>
-      <div className="w-[90%] ml-4">
+      <div className="ml-4 w-[90%]">
         {TESTE.map((teste, index) => (
           <div
-            className="mb-8 flex flex-wrap lg:justify-center md:justify-center"
+            className="mb-8 flex flex-wrap md:justify-center lg:justify-center"
             key={index}
           >
             <motion.div
@@ -66,7 +66,7 @@ const Teste = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1 }}
-              className="w-full max-w-xl lg:w-3/4 mt-3"
+              className="mt-3 w-full max-w-xl lg:w-3/4"
             >
               <h6 className="mb-2 font-semibold">
                 {teste.role} -{" "}

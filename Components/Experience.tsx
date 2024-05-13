@@ -3,14 +3,11 @@ import ExperienceItem from "./ExperienceItem";
 
 const Experience = () => {
   return (
-    <div
-      id="cursos"
-      className="pt-[4rem] md:pt-[8rem] pb-[5rem] bg-[#121212]"
-    >
+    <div id="cursos" className="bg-[#121212] pb-[5rem] pt-[4rem] md:pt-[8rem]">
       <h1 className="heading_primary heading">
         Cursos e <span className="text-yellow-300">Experiências</span>
       </h1>
-      <div className="w-[80%] mx-auto pt-[4rem] md:pt-[8rem] grid grid-cols-1 md:grid-cols-2 gap-[2rem] items-center">
+      <div className="mx-auto grid w-[80%] grid-cols-1 items-center gap-[2rem] pt-[4rem] md:grid-cols-2 md:pt-[8rem]">
         <div>
           <ExperienceItem
             title="React Developer"

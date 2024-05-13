@@ -32,15 +32,15 @@ const ProjectCard = ({
       whileInView={{ opacity: 1, x: 0 }}
       initial={{ opacity: 0, x: -100 }}
       transition={{ duration: 1 }}
-      className="grid w-[80%] mx-auto pt-[4rem] grid-cols-1 lg:grid-cols-2 gap-20 items-center"
+      className="mx-auto grid w-[80%] grid-cols-1 items-center gap-20 pt-[4rem] lg:grid-cols-2"
     >
-      <div className="p-4 rounded-xl relative cursor-pointer hover:rotate-6 transform transition-all duration-200 bg-gray-800 shadow-md">
+      <div className="relative transform cursor-pointer rounded-xl bg-gray-800 p-4 shadow-md transition-all duration-200 hover:rotate-6">
         <Image
           src={`${image}`}
           alt={title}
           width={500}
           height={500}
-          className="object-contain rounded-xl mx-auto shadow-md"
+          className="mx-auto rounded-xl object-contain shadow-md"
         />
       </div>
 
@@ -49,42 +49,42 @@ const ProjectCard = ({
         initial={{ opacity: 0, x: 100 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-[25px] mt-[0.2rem] text-white font-[600]">
+        <h1 className="mt-[0.2rem] text-[25px] font-[600] text-white">
           {title}
         </h1>
 
-        <p className="text-[15px] text-white opacity-65 mt-[1rem]">
+        <p className="mt-[1rem] text-[15px] text-white opacity-65">
           {description}
         </p>
-        <div className="flex mt-4 gap-6">
+        <div className="mt-4 flex gap-6">
           <a href={urlG} target="_blank">
-            <FaGithub size={28} color="yellow"/>
+            <FaGithub size={28} color="yellow" />
           </a>
           <a href={urlD} target="_blank">
-            <IoIosLink size={28} color="yellow"/>
+            <IoIosLink size={28} color="yellow" />
           </a>
         </div>
-        <div className="mt-[1.3rem] grid-cols-2 grid sm:grid-cols-3 xl:grid-cols-4 gap-[2rem]">
+        <div className="mt-[1.3rem] grid grid-cols-2 gap-[2rem] sm:grid-cols-3 xl:grid-cols-4">
           {tech && (
-            <h1 className="px-6 py-3 bg-blue-700 text-white rounded-lg text-center">
+            <h1 className="rounded-lg bg-blue-700 px-6 py-3 text-center text-white">
               {tech}
             </h1>
           )}
 
           {tech2 && (
-            <h1 className="px-6 py-3 bg-white text-black rounded-lg text-center">
+            <h1 className="rounded-lg bg-white px-6 py-3 text-center text-black">
               {tech2}
             </h1>
           )}
 
           {tech3 && (
-            <h1 className="px-6 py-3 bg-sky-500 text-black rounded-lg text-center">
+            <h1 className="rounded-lg bg-sky-500 px-6 py-3 text-center text-black">
               {tech3}
             </h1>
           )}
 
           {tech4 && (
-            <h1 className="px-6 py-3 bg-blue-500 text-white rounded-lg text-center">
+            <h1 className="rounded-lg bg-blue-500 px-6 py-3 text-center text-white">
               {tech4}
             </h1>
           )}

@@ -6,60 +6,65 @@ import React from "react";
 const about = () => {
   return (
     <div id="sobre" className="bg-[#121121] pb-[3rem] pt-[4rem] md:pt-[8rem]">
-      <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
+      <div className="mx-auto grid w-[80%] grid-cols-1 items-center gap-[3rem] md:grid-cols-2">
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-[20px] font-bold uppercase text-[#55e6a5] mb-[1rem]">
+          <h1 className="mb-[1rem] text-[20px] font-bold uppercase text-[#55e6a5]">
             conheça mais
           </h1>
-          <h2 className="text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] leading-[2rem] capitalize mb-[3rem] font-bold text-white">
+          <h2 className="mb-[3rem] text-[25px] font-bold capitalize leading-[2rem] text-white md:text-[35px] md:leading-[3rem] lg:text-[45px]">
             SOBRE<span className="text-yellow-400"> MIM</span>
           </h2>
           <div className="mb-[3rem] flex items-center md:space-x-10">
             <span
-              className="w-[100px] hidden md:block h-[5px]
-            bg-slate-400 rounded-sm"
+              className="hidden h-[5px] w-[100px] rounded-sm
+            bg-slate-400 md:block"
             ></span>
-            <p className="text-[19px] text-slate-300 w-[80%]">
-              Olá! Meu nome é [Seu Nome], e sou um entusiasta de tecnologia
-              apaixonado por criar experiências digitais incríveis.
+            <p className="w-[80%] text-[19px] text-slate-300">
+              Olá! Meu nome é Helton Ribeiro Baborsa Filho, tenho 21 anos e moro
+              em Manaus/Amazonas. Minha jornada na tecnologia começou há dois
+              anos, quando me encantei com HTML durante um curso. Desde então,
+              tenho me dedicado a aprimorar minhas habilidades e explorar o
+              vasto mundo do desenvolvimento de software.
               <br />
               <br />
-              Desde tenra idade, fui fascinado pelo mundo da programação e do
-              design web, e essa paixão me levou a embarcar em uma jornada
-              emocionante de aprendizado e autodesenvolvimento.
+              Meu foco principal é me tornar um desenvolvedor front-end
+              habilidoso, mas estou sempre buscando expandir meus conhecimentos
+              para incluir o desenvolvimento back-end. Meu objetivo final é me
+              tornar um desenvolvedor full-stack, capaz de criar soluções
+              completas e inovadoras que proporcionem uma excelente experiência
+              ao usuário.
               <br />
               <br />
-              Com um fundo sólido em ciência da computação e design de interface
-              de usuário, estou constantemente buscando aprimorar minhas
-              habilidades e me manter atualizado com as últimas tendências e
-              tecnologias do setor.
+              Estou constantemente aprendendo e evoluindo, sempre buscando novos
+              desafios e oportunidades para crescer profissionalmente. Estou
+              animado para compartilhar minha jornada e projetos com você!
             </p>
           </div>
           <a
             href="/Currículo.pdf"
             download
-            className="hover:bg-yellow-400 transition-all duration-200 inline-flex items-center px-[2rem] py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black rounded-full cursor-pointer gap-2"
+            className="inline-flex cursor-pointer items-center gap-2 rounded-full bg-[#55e6a5] px-[2rem] py-[1rem] text-[18px] font-bold uppercase text-black transition-all duration-200 hover:bg-yellow-400"
           >
             Download CV
-            <ArrowDownCircleIcon className="w-[1.6rem] h-[1.7rem] text-black" />
+            <ArrowDownCircleIcon className="h-[1.7rem] w-[1.6rem] text-black" />
           </a>
         </motion.div>
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 1 }}
-          className="lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[300px] h-[300px] relative hidden md:block"
+          className="relative mx-auto mt-[2rem] hidden h-[300px] w-[300px] md:mx-0 md:block lg:mt-0 lg:h-[500px] lg:w-[500px]"
         >
           <Image
             src="/images/header.svg"
             alt="user"
-            layout="fill"
+            fill
             objectFit="contain"
-            className="relative z-[11] w-[100%] h-[100%] object-contain animate-wiggle ml-20"
+            className="relative z-[11] ml-20 h-[100%] w-[100%] animate-wiggle object-contain"
           />
         </motion.div>
       </div>

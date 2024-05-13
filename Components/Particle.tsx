@@ -15,7 +15,7 @@ const Particle = () => {
     async (container: Container | undefined) => {
       await console.log(container);
     },
-    []
+    [],
   );
 
   return (

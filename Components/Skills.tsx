@@ -5,33 +5,44 @@ import { motion } from "framer-motion";
 const Skills = () => {
   return (
     <div id="skills">
-      <div className="bg-[#121212] pt-[7.4rem]  pb-[5rem]">
-        <div className="grid w-[80%] mx-auto grid-cols-1 lg:grid-cols-7 gap-[3rem] items-center">
-          <motion.div 
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 1 }}
-          className="col-span-3">
-            <h1 className="text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase">
+      <div className="bg-[#121212] pb-[5rem]  pt-[7.4rem]">
+        <div className="mx-auto grid w-[80%] grid-cols-1 items-center gap-[3rem] lg:grid-cols-7">
+          <motion.div
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 1 }}
+            className="col-span-3"
+          >
+            <h1 className="text-[28px] font-bold uppercase text-white sm:text-[33px] md:text-[45px]">
               My <span className="text-yellow-400">Skills</span>
             </h1>
-            <p className="text-[15px] mb-[1.5rem] text-white opacity-70 mt-[1.5rem]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quia
-              aperiam consequatur nesciunt adipisci, tempore voluptatibus omnis,
-              distinctio officiis nisi unde sapiente, alias excepturi quas
-              veniam aspernatur ab eaque officia. Lorem, ipsum dolor sit amet
-              consectetur adipisicing. Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Esse nemo repudiandae iste ducimus. Fuga officia
-              voluptatibus, beatae ut blanditiis, sunt dolorum distinctio
-              tenetur, modi vitae deleniti maiores magni libero quisquam. Lorem
-              ipsum dolor sit, amet consectetur adipisicing elit. Ipsum sapiente
-              magni consequatur voluptas, sint ex perferendis fugit inventore
-              optio similique incidunt deleniti illo quisquam obcaecati eligendi
-              suscipit et tempora dolorum?
+            <p className="mb-[1.5rem] mt-[1.5rem] text-[15px] text-white opacity-70">
+              Sempre tive uma paixão por explorar novas tecnologias e me manter
+              atualizado com as tendências do mercado de trabalho. Desde os meus
+              primeiros dias de estudo, quando fui introduzido à linguagem C# na
+              escola, fiquei fascinado com a ideia de aprender novas linguagens
+              e ampliar meu conhecimento.
+              <br />
+              <br />
+              Ao longo do tempo, explorei várias linguagens como C++, Python e
+              C#, mas minha paixão pelo desenvolvimento de interfaces gráficas
+              me levou a focar meus estudos no Desenvolvimento Front-end. Possuo
+              experiência sólida em tecnologias essenciais como HTML, CSS,
+              Tailwind, JavaScript e TypeScript, além de frameworks como React
+              JS, React Native e Bootstrap. Com conhecimentos em Node.js e
+              Python, estou pronto para explorar oportunidades tanto no
+              front-end quanto no back-end.
+              <br />
+              <br />
+              Estou sempre em busca de novos desafios e oportunidades para
+              aprimorar minhas habilidades e contribuir para projetos
+              inovadores. Estou animado para continuar minha jornada no mundo da
+              tecnologia e criar experiências digitais excepcionais para os
+              usuários.
             </p>
           </motion.div>
           <div className="col-span-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 gap-[1rem] items-center">
+            <div className="grid grid-cols-1 items-center gap-[1rem] sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4">
               <div data-aos="flip-left" data-aos-anchor-placement="top-center">
                 <SkillCard
                   title="React JS"
@@ -116,20 +127,14 @@ const Skills = () => {
                   level="Intermediario"
                 />
               </div>
-              <div
-                data-aos="flip-left"
-                data-aos-anchor-placement="top-center"
-              >
+              <div data-aos="flip-left" data-aos-anchor-placement="top-center">
                 <SkillCard
                   title="Java"
                   image="/images/java.svg"
                   level="Intermediario"
                 />
               </div>
-              <div
-                data-aos="flip-left"
-                data-aos-anchor-placement="top-center"
-              >
+              <div data-aos="flip-left" data-aos-anchor-placement="top-center">
                 <SkillCard
                   title="Tailwind"
                   image="/images/tailwind.svg"

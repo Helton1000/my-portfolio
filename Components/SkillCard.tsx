@@ -9,15 +9,15 @@ interface Props {
 
 const SkillCard = ({ image, title, level }: Props) => {
   return (
-    <div className="p-6 hover:bg-red-600 duration-300 transition-all cursor-pointer text-center rounded-lg bg-gray-900">
+    <div className="cursor-pointer rounded-lg bg-gray-900 p-6 text-center transition-all duration-300 hover:bg-red-600">
       <Image
         src={`${image}`}
         alt={title}
         width={80}
         height={80}
-        className="object-cover mx-auto"
+        className="mx-auto object-cover"
       />
-      <h1 className="text-[18px] mt-[1rem] text-white font-[600]">{title}</h1>
+      <h1 className="mt-[1rem] text-[18px] font-[600] text-white">{title}</h1>
       {/* <div className="bg-black mt-[1rem] rounded-lg p-2 text-white opacity-40 level overflow-hidden">
         <span className="text-sm lg:text-base">{level}</span>
       </div> */}

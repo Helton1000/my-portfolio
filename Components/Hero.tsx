@@ -12,58 +12,64 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div id="home" className="h-[88vh] bg-[url('/images/banner.jpg')] mt-[10vh] bg-cover bg-center">
+    <div
+      id="home"
+      className="mt-[10vh] h-[88vh] bg-[url('/images/banner.jpg')] bg-cover bg-center"
+    >
       <Particle />
-      <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
+      <div className="mx-auto grid h-[100%] w-[80%] grid-cols-1 items-center gap-[3rem] lg:grid-cols-2">
         <motion.div
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 1 }}>
-          <h1 className="text-[35px] md:text-[50px] text-white font-bold ">
-            HI, I'm<span className="text-yellow-400"> Helton</span>
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ duration: 1 }}
+        >
+          <h1 className="text-[35px] font-bold text-white md:text-[50px] ">
+            Helton<span className="text-yellow-400"> Barbosa</span>
           </h1>
           {/* Definições */}
           <TextEffect />
           <p className="mt-[1.5rem] text-[20px] text-[#ffffff92]">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
-            quas, tempore aliquam nesciunt veritatis, suscipit deserunt modi
-            excepturi neque natus quod ea mollitia expedita ex repellendus?
-            Excepturi tempora illum et!
+            Bem-vindo ao meu portfólio! Sou Helton Barbosa, um entusiasta da
+            tecnologia e aspirante a desenvolvedor full stack, dedicado a criar
+            soluções inovadoras. Com um interesse especial em front-end, estou
+            em uma missão para unir criatividade com tecnologia para construir
+            projetos impactantes que façam a diferença.
           </p>
           {/* Botões */}
-          <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row sm:space-x-2">
+          <div className="mt-[2rem] flex-col space-y-6 sm:flex sm:flex-row sm:space-x-2 sm:space-y-0">
             <div>
               <a
                 href="/Currículo.pdf"
                 download
-                className="hover:bg-yellow-400 transition-all duration-200 inline-flex items-center px-[2rem] py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black rounded-full cursor-pointer gap-2"
+                className="inline-flex cursor-pointer items-center gap-2 rounded-full bg-[#55e6a5] px-[2rem] py-[1rem] text-[18px] font-bold uppercase text-black transition-all duration-200 hover:bg-yellow-400"
               >
                 Download CV
-                <ArrowDownCircleIcon className="w-[1.6rem] h-[1.7rem] text-black" />
+                <ArrowDownCircleIcon className="h-[1.7rem] w-[1.6rem] text-black" />
               </a>
             </div>
 
             <div className="flex items-center space-x-2">
               <a href="https://github.com/Helton1000" target="_blank">
-                <FaGithubSquare className="w-[4rem] h-[4rem] hover:text-yellow-400 transition-all duration-200 text-[#55e6a5]" />
+                <FaGithubSquare className="h-[4rem] w-[4rem] text-[#55e6a5] transition-all duration-200 hover:text-yellow-400" />
               </a>
               <a href="https://www.linkedin.com/in/hfbarbosa/" target="_blank">
-                <FaLinkedin className="w-[4rem] h-[4rem] hover:text-yellow-400 transition-all duration-200 text-[#55e6a5]" />
+                <FaLinkedin className="h-[4rem] w-[4rem] text-[#55e6a5] transition-all duration-200 hover:text-yellow-400" />
               </a>
             </div>
           </div>
         </motion.div>
         {/* Foto */}
-        <motion.div 
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: 100 }}
-        transition={{ duration: 1 }}
-        className="w-[500px] hidden relative lg:flex items-center rounded-full h-[500px] ml-20">
+        <motion.div
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 100 }}
+          transition={{ duration: 1 }}
+          className="relative ml-20 hidden h-[500px] w-[500px] items-center rounded-full lg:flex"
+        >
           <Image
             src="/images/ic1.jpg"
             alt="user"
-            layout="fill"
-            className="object-cover rounded-full border border-purple-500"
+            fill
+            className="rounded-full border border-purple-500 object-cover"
           />
         </motion.div>
       </div>
