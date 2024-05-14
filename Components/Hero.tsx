@@ -9,6 +9,7 @@ import {
 } from "@heroicons/react/20/solid";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -49,12 +50,12 @@ const Hero = () => {
             </div>
 
             <div className="flex items-center space-x-2">
-              <a href="https://github.com/Helton1000" target="_blank">
+              <Link href="https://github.com/Helton1000" target="_blank">
                 <FaGithubSquare className="h-[4rem] w-[4rem] text-[#55e6a5] transition-all duration-200 hover:text-yellow-400" />
-              </a>
-              <a href="https://www.linkedin.com/in/hfbarbosa/" target="_blank">
+              </Link>
+              <Link href="https://www.linkedin.com/in/hfbarbosa/" target="_blank">
                 <FaLinkedin className="h-[4rem] w-[4rem] text-[#55e6a5] transition-all duration-200 hover:text-yellow-400" />
-              </a>
+              </Link>
             </div>
           </div>
         </motion.div>
@@ -66,10 +67,10 @@ const Hero = () => {
           className="relative ml-20 hidden h-[500px] w-[500px] items-center rounded-full lg:flex"
         >
           <Image
-            src="/images/ic1.jpg"
+            src="/images/foto.jpg"
             alt="user"
             fill
-            className="rounded-full border border-purple-500 object-cover"
+            className="rounded-full object-cover w-24 h-24"
           />
         </motion.div>
       </div>
