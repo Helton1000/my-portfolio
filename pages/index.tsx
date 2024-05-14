@@ -1,4 +1,3 @@
-import "@/styles/globals.css";
 import Hero from "@/Components/Hero";
 import MobileNav from "@/Components/MobileNav";
 import Nav from "@/Components/Nav";
