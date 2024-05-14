@@ -1,16 +1,13 @@
 import { EnvelopeIcon, MapIcon, PhoneIcon } from "@heroicons/react/20/solid";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div className="bg-black pb-[3rem] pt-[5rem]">
-      <motion.div
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 0.5 }}
-        className="mx-auto grid w-[80%] grid-cols-1 gap-[2rem] border-b-[1.4px] border-gray-600 border-opacity-40 pb-5 md:grid-cols-2 lg:grid-cols-3"
-      >
+      <div className="mx-auto grid w-[80%] grid-cols-1 gap-[2rem] border-b-[1.4px] border-gray-600 border-opacity-40 pb-5 md:grid-cols-2 lg:grid-cols-3">
         <div className="text-[18px] text-white">
           <h1 className="text-[30px] font-bold text-white">
             Helton
@@ -18,10 +15,11 @@ const Footer = () => {
           </h1>
 
           <p className="mt-[0.5rem] text-[14px] text-white opacity-70">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            fugiat numquam consectetur vero. Eius velit ipsa nemo! Reprehenderit
-            modi sapiente provident, corporis, ipsum cumque debitis quas, nam
-            repellat quidem alias.
+            Obrigado por visitar meu portfólio! Se você gostou do que viu ou tem
+            interesse em colaborar, não hesite em entrar em contato. Estou
+            ansioso para ouvir suas ideias e projetos. Conecte-se comigo nas
+            redes sociais abaixo para acompanhar meu trabalho e ficar por dentro
+            das novidades. Até breve!
           </p>
 
           <p className="mt-[1.3rem] font-semibold text-yellow-300 underline">
@@ -85,8 +83,16 @@ const Footer = () => {
               +55 92 98462-6960
             </p>
           </div>
+          <div className="mt-[1rem] flex items-center space-x-2">
+            <Link href="https://www.linkedin.com/in/hfbarbosa/" target="_blank">
+              <FaLinkedin className="h-7 w-7 text-yellow-300" />
+            </Link>
+            <Link href="https://github.com/Helton1000" target="_blank">
+              <FaGithubSquare className="h-7 w-7 text-yellow-300" />
+            </Link>
+          </div>
         </div>
-      </motion.div>
+      </div>
       <div className="mx-auto mt-[1.4rem] w-[80%] text-white opacity-70">
         &#169; Copyright Helton Ribeiro Barbosa Filho 2024
       </div>
