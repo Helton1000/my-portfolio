@@ -11,9 +11,9 @@ const Projects = () => {
         transition={{ duration: 0.5 }}
         className="text-center"
       >
-        <p className="heading_mini heading">Recent Works</p>
+        <p className="heading_mini heading">Trabalhos Recentes</p>
         <h1 className="heading_primary heading">
-          My Best <span className="text-yellow-300">Projetcs</span>
+          Meus <span className="text-yellow-300">Projetos</span>
         </h1>
       </motion.div>
 

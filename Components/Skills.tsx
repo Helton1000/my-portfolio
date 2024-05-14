@@ -14,7 +14,7 @@ const Skills = () => {
             className="col-span-3"
           >
             <h1 className="text-[28px] font-bold uppercase text-white sm:text-[33px] md:text-[45px]">
-              My <span className="text-yellow-400">Skills</span>
+              Habil<span className="text-yellow-400">idades</span>
             </h1>
             <p className="mb-[1.5rem] mt-[1.5rem] text-[15px] text-white opacity-70">
               Sempre tive uma paixão por explorar novas tecnologias e me manter
