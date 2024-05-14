@@ -50,14 +50,14 @@ const Contact = () => {
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 1 }}
         >
-          <p className="heading_mini">Get in Touch</p>
+          <p className="heading_mini">Deixe uma mensagem</p>
           <h1 className="text-[28px] font-bold uppercase text-white sm:text-[33px] md:text-[45px]">
             Meu <span className="text-yellow-400">Contato</span>
           </h1>
           <p className="mt-[1rem] text-[15px] text-white opacity-75">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-            molestiae consectetur libero maiores architecto enim eos dolores
-            deserunt perferendis provident?
+            Vamos conversar! Estou disponível para colaborações, oportunidades e
+            para responder qualquer dúvida que você possa ter. Aguardo seu
+            contato!
           </p>
           <h1 className="mb-[2rem] mt-[2rem] text-[30px] font-bold text-yellow-300 underline">
             +55 92 98462-6960
