@@ -18,20 +18,13 @@ const Projects = () => {
       </motion.div>
 
       <ProjectCard
-        title="Projeto 1"
-        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque a
-        ipsam quidem quis hic beatae explicabo, laborum esse nulla ratione
-        suscipit numquam voluptate dicta ipsum porro, corporis recusandae!
-        Harum, aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Impedit similique, voluptate facilis nostrum consequuntur
-        molestias assumenda reprehenderit quasi numquam! Voluptatum voluptate
-        at libero distinctio illum, voluptatem reiciendis cupiditate
-        voluptates nihil?"
+        title="Portfolio"
+        description="Meu portfólio é uma expressão da minha jornada no desenvolvimento web, destacando meu trabalho e habilidades. Desenvolvido com React, Next.js e TypeScript, utilizei tecnologias modernas para criar uma experiência dinâmica e responsiva. A estilização com Tailwind CSS proporciona um design limpo e elegante. Meu objetivo é mostrar meu trabalho, explorar e aprimorar minhas habilidades, e demonstrar meu compromisso com a excelência técnica e a constante evolução no campo do desenvolvimento web."
         tech="React"
         tech2="Next Js"
         tech3="Tailwind"
         tech4="Typescript"
-        image="/images/p1.png"
+        image="/images/portfolio.png"
       />
       <ProjectCard
         title="Clone Steam"
@@ -45,30 +38,30 @@ const Projects = () => {
         image="/images/projeto2.png"
       />
       <ProjectCard
-        title="Projeto 3"
-        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque a
-        ipsam quidem quis hic beatae explicabo, laborum esse nulla ratione
-        suscipit numquam voluptate dicta ipsum porro, corporis recusandae!
-        Harum, aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Impedit similique, voluptate facilis nostrum consequuntur
-        molestias assumenda reprehenderit quasi numquam! Voluptatum voluptate
-        at libero distinctio illum, voluptatem reiciendis cupiditate
-        voluptates nihil?"
+        title="Clone Ifood - Mobile"
+        description="O projeto é um clone do iFood, desenvolvido com abordagem Mobile First e tecnologias de ponta, com a intenção de estudar conceitos avançados do Next.js e suas novas funcionalidades. Utilizei Next.js para uma experiência dinâmica e responsiva, e Tailwind CSS para um design moderno. O PostgreSQL, com Prisma ORM, gerencia os dados de forma eficiente, garantindo desempenho consistente e segurança. Além disso, implementei autenticação pelo Google para uma experiência mais segura e prática, juntamente com rotas para uma navegação fluida. Meu objetivo é oferecer uma experiência de entrega de comida rápida, intuitiva e personalizada, demonstrando a eficácia dessas tecnologias de última geração."
+        urlG="https://github.com/Helton1000/Clone-Ifood"
+        urlD="https://clone-ifood-tau.vercel.app"
         tech="React"
         tech2="Next Js"
         tech3="Tailwind"
         tech4="Typescript"
-        image="/images/p1.png"
+        tech6="NodeJS"
+        tech5="PostgreSQL"
+        tech7="Prisma"
+        image="/images/ifood.png"
       />
       <ProjectCard
-        title="Projeto 4"
-        description='O projeto "Bikcraft" é uma e-commerce de bicicletas personalizadas, desenvolvida utilizando JavaScript, CSS e HTML. Idealizado com o propósito de aprender e aplicar princípios de UI/UX, o projeto utilizou o Figma para criar protótipos e definir as diretrizes de design.'
-        urlD="https://bikcraft-wheat.vercel.app/"
+        title="Crud fullstack"
+        description="Meu projeto é um aplicativo CRUD full stack, desenvolvido com JavaScript e tecnologias modernas. Utilizei Node.js com Express para o backend. Adotei MySQL como banco de dados e Docker para gerenciamento de contêineres. O objetivo é demonstrar minha habilidade em desenvolvimento full stack e explorar o potencial de tecnologias como JavaScript, Docker e MySQL para criar soluções eficientes e escaláveis."
+        urlG="https://github.com/Helton1000/crud-fullstack"
         tech="Javascript"
         tech2="CSS"
         tech3="HTML"
-        tech4="Figma"
-        image="/images/projeto3.png"
+        tech6="NodeJS"
+        tech4="Docker"
+        tech5="MySQL"
+        image="/images/crud.jpg"
       />
     </div>
   );
