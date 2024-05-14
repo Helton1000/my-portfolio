@@ -5,12 +5,11 @@ import About from "@/Components/About";
 import React, { useEffect, useState } from "react";
 import Skills from "@/Components/Skills";
 import Projects from "@/Components/Projects";
-import Experience from "@/Components/Experience";
 import Contact from "@/Components/Contact";
 import Footer from "@/Components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Teste from "@/Components/Teste";
+import Experience from "@/Components/Experience";
 
 const PaginaInicial = () => {
   const [nav, setNav] = useState(false);
@@ -59,8 +58,7 @@ const PaginaInicial = () => {
         {/* Skills */}
         <Skills />
         <Projects />
-        {/* <Experience /> */}
-        <Teste />
+        <Experience />
 
         <Contact />
         <Footer />
